@@ -1,6 +1,6 @@
 ﻿using System.Text.Json;
 
-namespace LeetCode.Easy._283
+namespace LeetCode.Easy._283 // Solved
 {
     internal class _283_Move_Zeroes
     {
