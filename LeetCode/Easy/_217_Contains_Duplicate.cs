@@ -6,7 +6,7 @@ namespace LeetCode.Easy._217
     {
         public bool ContainsDuplicate(int[] nums)
         {
-            HashSet<int> set = new HashSet<int>();
+            HashSet<int> set = nums.ToHashSet<int>();
             foreach (var num in nums)
             {
                 if (!set.Add(num))
@@ -14,6 +14,10 @@ namespace LeetCode.Easy._217
             }
 
             return false;
+
+            //// Alternative solution: lekin bu tezlikdan va hotiradan ko'proq ishlatadi
+            //HashSet<int> set = nums.ToHashSet<int>();
+            //return set.Count() != nums.Count();
         }
     }
     internal class _217_Contains_Duplicate
