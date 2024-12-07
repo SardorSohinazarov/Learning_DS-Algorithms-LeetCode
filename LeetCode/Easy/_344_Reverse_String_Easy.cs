@@ -4,11 +4,12 @@
     {
         public void ReverseString(char[] s)
         {
-            for (int i = 0; i < s.Length / 2; i++)
+            var count = s.Count();
+            for (int i = 0; i < count / 2; i++)
             {
                 char temp = s[i];
-                s[i] = s[s.Length - 1 - i];
-                s[s.Length - 1 - i] = temp;
+                s[i] = s[count - i - 1];
+                s[count - i - 1] = temp;
             }
         }
     }
