@@ -49,11 +49,11 @@
 
     internal class _102
     {
-        public static void Main()
-        {
-            Solution solution = new Solution();
-            TreeNode root = new TreeNode(3, new TreeNode(9), new TreeNode(20, new TreeNode(15), new TreeNode(7)));
-            Console.WriteLine(solution.LevelOrder(root));
-        }
+        //public static void Main()
+        //{
+        //    Solution solution = new Solution();
+        //    TreeNode root = new TreeNode(3, new TreeNode(9), new TreeNode(20, new TreeNode(15), new TreeNode(7)));
+        //    Console.WriteLine(solution.LevelOrder(root));
+        //}
     }
 }
