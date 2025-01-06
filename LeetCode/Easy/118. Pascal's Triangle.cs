@@ -1,5 +1,4 @@
-﻿
-namespace LeetCode.Easy._118
+﻿namespace LeetCode.Easy._118
 {
     public class Solution
     {
