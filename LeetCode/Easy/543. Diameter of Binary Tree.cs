@@ -28,11 +28,8 @@
         {
             if(root is null)
                 return 0;
-            else if(root.left is null && root.right is null)
-                return 1;
-            else { 
+            else
                 return 1 + Math.Max(GetHight(root.left), GetHight(root.right));
-            }
         }
 
         internal class _543
