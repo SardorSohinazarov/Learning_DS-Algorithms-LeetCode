@@ -1,14 +1,16 @@
-﻿namespace LeetCode.Medium._98
+﻿using System;
+
+namespace LeetCode.Medium._98
 {
     internal class _98
     {
-        private static void Main()
-        {
-            //[1,null,1]
-            Solution solution = new Solution();
-            TreeNode root = new TreeNode(1, null, new TreeNode(1));
-            Console.WriteLine(solution.IsValidBST(root));
-        }
+        //private static void Main()
+        //{
+        //    //[1,null,1]
+        //    Solution solution = new Solution();
+        //    TreeNode root = new TreeNode(1, null, new TreeNode(1));
+        //    Console.WriteLine(solution.IsValidBST(root));
+        //}
     }
 
     public class TreeNode {
@@ -33,28 +35,12 @@
         {
             if (root == null)
                 return true;
-            else if (root.left == null && root.right == null)
-                return true;
-            else if (root.left == null && root.right != null)
-            {
-                if (root.val < root.right.val)
-                    return dfs(root.right);
-                else return false;
-            }
-            else if (root.left != null && root.right == null)
-            {
-                if (root.left.val < root.val)
-                    return dfs(root.left);
-                else return false;
-            }
-            else if (root.left.val < root.val && root.val < root.right.val)
-            {
-                bool left = dfs(root.left);
-                bool right = dfs(root.right);
 
-                return left && right;
-            }
-            return false;
+            if ((max != null && root.val > max)
+                || (min != null && root.val < min))
+                return false;
+
+            return dfs(root.left, min, root.val) && dfs(root.right, root.val, max);
         }
     }
 }
