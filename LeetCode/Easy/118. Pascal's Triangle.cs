@@ -41,18 +41,18 @@
     }
     internal class _118
     {
-        private static void Main()
-        {
-            var solution = new Solution();
-            var result = solution.Generate(5);
-            foreach (var list in result)
-            {
-                foreach (var item in list)
-                {
-                    Console.Write(item + " ");
-                }
-                Console.WriteLine();
-            }
-        }
+        //private static void Main()
+        //{
+        //    var solution = new Solution();
+        //    var result = solution.Generate(5);
+        //    foreach (var list in result)
+        //    {
+        //        foreach (var item in list)
+        //        {
+        //            Console.Write(item + " ");
+        //        }
+        //        Console.WriteLine();
+        //    }
+        //}
     }
 }
