@@ -14,11 +14,32 @@ public class _520
 
         public static bool DetectCapitalUse(string word)
         {
-            var allUpper = "^[A-Z]+$";
-            var allLower = "^[a-z]+$";
-            var firstCapital = "^[A-Z][a-z]*$";
+            if(IsUpper(word) || IsLower(word))
+                return true;
 
-            return Regex.IsMatch(word, firstCapital) || Regex.IsMatch(word, allLower) || Regex.IsMatch(word, allUpper);
+            return IsUpper(word[..1]) && IsLower(word[1..]);
         }
+
+        public static bool IsUpper(string word) => IsInRange(word, 'A', 'Z');
+
+        public static bool IsLower(string word) => IsInRange(word, 'a', 'z');
+
+        public static bool IsInRange(string word, char a, char b)
+        {
+            foreach (char c in word)
+                if(a > c &&  b < c)
+                    return false;
+
+            return true;
+        }
+
+        //public static bool DetectCapitalUse(string word)
+        //{
+        //    var allUpper = "^[A-Z]+$";
+        //    var allLower = "^[a-z]+$";
+        //    var firstCapital = "^[A-Z][a-z]*$";
+
+        //    return Regex.IsMatch(word, firstCapital) || Regex.IsMatch(word, allLower) || Regex.IsMatch(word, allUpper);
+        //}
     }
 }
