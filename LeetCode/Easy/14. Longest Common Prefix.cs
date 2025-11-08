@@ -4,11 +4,11 @@
     {
         public class Solution
         {
-            public static void Main()
-            {
-                string[] strs = ["dog", "racecar", "car"];
-                Console.WriteLine(LongestCommonPrefix(strs));
-            }
+            //public static void Main()
+            //{
+            //    string[] strs = ["dog", "racecar", "car"];
+            //    Console.WriteLine(LongestCommonPrefix(strs));
+            //}
 
             public static string LongestCommonPrefix(string[] strs)
             {
@@ -34,8 +34,8 @@
                     if (isPrefix)
                         return prefix;
                 }
-                
-                return prefix;
+
+                return "";
             }
 
             private static string Min(string[] strs)
