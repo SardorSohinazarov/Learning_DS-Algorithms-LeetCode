@@ -15,18 +15,18 @@
 
         public class Solution
         {
-            private static void Main(string[] args)
-            {
-                var solution = new Solution();
-                var list1 = new ListNode(1, new ListNode(2, new ListNode(4)));
-                var list2 = new ListNode(1, new ListNode(3, new ListNode(4)));
-                var result = solution.MergeTwoLists(list1, list2);
-                while (result != null)
-                {
-                    Console.WriteLine(result.val);
-                    result = result.next;
-                }
-            }
+            //private static void Main(string[] args)
+            //{
+            //    var solution = new Solution();
+            //    var list1 = new ListNode(1, new ListNode(2, new ListNode(4)));
+            //    var list2 = new ListNode(1, new ListNode(3, new ListNode(4)));
+            //    var result = solution.MergeTwoLists(list1, list2);
+            //    while (result != null)
+            //    {
+            //        Console.WriteLine(result.val);
+            //        result = result.next;
+            //    }
+            //}
 
             public ListNode MergeTwoLists(ListNode list1, ListNode list2)
             {
