@@ -4,12 +4,12 @@
     {
         public class Solution
         {
-            private static void Main(string[] args)
-            {
-                var solution = new Solution();
-                var result = solution.LengthOfLongestSubstring("abcabcbb");
-                Console.WriteLine(result);
-            }
+            //private static void Main(string[] args)
+            //{
+            //    var solution = new Solution();
+            //    var result = solution.LengthOfLongestSubstring("abcabcbb");
+            //    Console.WriteLine(result);
+            //}
 
             public int LengthOfLongestSubstring(string s)
             {
