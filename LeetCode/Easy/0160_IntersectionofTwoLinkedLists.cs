@@ -11,49 +11,49 @@
 
         public class Solution
         {
-            public static void Main()
-            {
-                var headA = new ListNode(4)
-                {
-                    next = new ListNode(1)
-                    {
-                        next = new ListNode(8)
-                        {
-                            next = new ListNode(4)
-                            {
-                                next = new ListNode(5)
-                                {
-                                    next = null
-                                }
-                            }
-                        }
-                    }
-                };
-                //5,6,1,8,4,5]
-                var headB = new ListNode(5)
-                {
-                    next = new ListNode(6)
-                    {
-                        next = new ListNode(1)
-                        {
-                            next = new ListNode(8)
-                            {
-                                next = new ListNode(4)
-                                {
-                                    next = new ListNode(5)
-                                    {
-                                        next = null
-                                    }
-                                }
-                            }
-                        }
-                    },
+            //public static void Main()
+            //{
+            //    var headA = new ListNode(4)
+            //    {
+            //        next = new ListNode(1)
+            //        {
+            //            next = new ListNode(8)
+            //            {
+            //                next = new ListNode(4)
+            //                {
+            //                    next = new ListNode(5)
+            //                    {
+            //                        next = null
+            //                    }
+            //                }
+            //            }
+            //        }
+            //    };
+            //    //5,6,1,8,4,5]
+            //    var headB = new ListNode(5)
+            //    {
+            //        next = new ListNode(6)
+            //        {
+            //            next = new ListNode(1)
+            //            {
+            //                next = new ListNode(8)
+            //                {
+            //                    next = new ListNode(4)
+            //                    {
+            //                        next = new ListNode(5)
+            //                        {
+            //                            next = null
+            //                        }
+            //                    }
+            //                }
+            //            }
+            //        },
 
-                };
+            //    };
 
-                Solution solution = new Solution();
-                Console.WriteLine(solution.GetIntersectionNode(headA, headB).val);
-            }
+            //    Solution solution = new Solution();
+            //    Console.WriteLine(solution.GetIntersectionNode(headA, headB).val);
+            //}
 
             public ListNode GetIntersectionNode(ListNode headA, ListNode headB)
             {
