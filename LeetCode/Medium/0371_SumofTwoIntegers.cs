@@ -1,6 +1,4 @@
-﻿using System.Runtime.CompilerServices;
-
-namespace LeetCode.Medium
+﻿namespace LeetCode.Medium
 {
     public class _0371_SumofTwoIntegers
     {
